@@ -1,0 +1,189 @@
+body{
+  font-size: 18px;
+  color:$grey_text_color;
+}
+.header-section{
+  background-color: $bg_blue_color;
+  background-image: url("../img/background-women.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  a.nav-link.disabled.nav-block__nav-link{
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $grey_text_color;
+  }
+  ul.navbar-nav.nav-block{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .you-victorious-row{
+      padding-top: 4.444rem;
+      padding-bottom: 11rem;
+    .you-victorious-block{
+       .you-victorious-block__img{
+         display: block;
+         margin: 0 auto;
+       }
+      .you-victorious-block__title{
+        margin-top:140px;
+        font-size: 5rem;
+        text-align: center;
+        text-transform: uppercase;
+        color: $main_title_color;
+       // font-family: TTNorms-Bold;
+      }
+
+      .you-victorious-block__signup{
+        display: block;
+        width: 200px;
+        color:#ffffff;
+        font-size: 22px;
+        padding: 15px 50px;
+        background-color: $bg_red_color;
+        text-transform: uppercase;
+        margin: 75px auto 0 auto;
+     }
+    }
+ }
+
+
+
+}
+
+.about-section{
+  background-color: $bg_red_color;
+  color: $white_text_color;
+  padding-top: 5.556rem;
+  padding-bottom: 13.33rem;
+  .about-row-one{
+      .about-row-one__text{
+        padding-right: 4.211rem;
+      }
+  }
+  .about-row-two{
+    margin-top:3.889rem;
+  }
+  .about-row-three{
+    margin-top: 3.889rem;
+    .about-row-three__text{
+      padding-right: 4.211rem;
+    }
+  }
+}
+
+.forpublishers-section{
+  background-color: $bg_white_color;
+  color: $grey_text_color;
+  padding-top: 7.222rem;
+  padding-bottom: 15.56rem;
+  .forpublishers-row-one{
+    margin-bottom: 10.56rem;
+  }
+}
+
+.foradvertisers-section{
+  background-color: $bg_red_color;
+  color: $white_text_color;
+  padding-top: 10.56rem;
+  padding-bottom: 16.67rem;
+  .foradvertisers-row-one{
+    margin-bottom: 6.111rem;
+  }
+}
+
+.contacts-section{
+  background-color: $bg_white_color;
+  color: $grey_text_color;
+  padding-top: 6.111rem;
+  padding-bottom:  9.722rem;
+  .contacts-row-one{
+    margin-bottom: 3.5rem;
+  }
+  .contacts-row-two{
+    padding-bottom: 2.5rem;
+  }
+
+  .contact-form__name,
+  .contact-form__email,
+  .contact-form__message
+  {
+    display: block;
+    width: 100%;
+    margin-bottom:  1.111rem;
+    padding-left: 0.5556rem;
+    border: 2px solid;
+  }
+  .contact-form__submit{
+    border-radius: 0px;
+    background-color: $bg_red_color;
+    font-size: 22px;
+    padding: 0rem 2.778rem;
+    color: $white_text_color;
+    text-transform: uppercase;
+
+  }
+}
+
+.popup-form-section{
+  width: 600px;
+  height: 440px;
+  background: #fff;
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  margin-left: -300px;
+  margin-top: -220px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 4;
+  .popup-form-section__img,
+  .popup-form-section__title{
+    display: block;
+    margin: 0 auto 1rem auto;
+    font-size: 5rem;
+    color:$main_title_color;
+  }
+   #modal_close{
+     width: 21px;
+     height: 21px;
+     position: absolute;
+     top: 10px;
+     right: 10px;
+     cursor: pointer;
+     display: block;
+   }
+  .popup-form__name,
+  .popup-form__email,
+  .popup-form__submit{
+    display: block;
+    width: 300px;
+    margin: 0 auto 1rem auto;
+  }
+  .popup-form__submit{
+    text-transform: uppercase;
+    background: $bg_red_color;
+    color: $white_text_color;
+    cursor:pointer;
+  }
+
+
+}
+
+#overlay {
+  z-index:3;
+  position:fixed;
+  background-color:#000;
+  opacity:0.8;
+  -moz-opacity:0.8;
+  filter:alpha(opacity=80);
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  cursor:pointer;
+  display: none;
+}
