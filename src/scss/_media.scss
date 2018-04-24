@@ -4,15 +4,86 @@
   }
 }
 
+@media (max-width: 1200px){
+  .forpublishers-section {
+    .background-text {
+      left: -23px;
+      top: 94px;
+      line-height: 135px;
+      z-index: -1;
+      overflow: hidden;
+      font-size: 130px;
+      font-weight: 900;
+      span {
+        font-size: 190px;
+      }
+    }
+  }
+
+}
+
 @media (max-width: 992px) {
+
+  .forpublishers-section {
+    .background-text {
+      left: -23px;
+      top: 250px;
+      line-height: 105px;
+      z-index: -1;
+      overflow: hidden;
+      font-size: 78px;
+      font-weight: 900;
+      span {
+        font-size: 100px;
+      }
+    }
+  }
+
   .header-section .you-victorious-row
   .you-victorious-block .you-victorious-block__title{
     font-size: 4rem;
   }
+
+  .about-section{
+    padding-top: 2.5rem;
+    padding-bottom: 6rem;
+  }
+
+  .forpublishers-section{
+    padding-top: 3rem;
+    padding-bottom: 7rem;
+  }
+
+  .forpublishers-section .forpublishers-row-one{
+    margin-bottom: 5rem;
+  }
+  .foradvertisers-section{
+    padding-top: 5rem;
+    padding-bottom: 7rem;
+    }
+
+    .contacts-section{
+      padding-top: 3rem;
+      padding-bottom: 4rem;
+    }
+
 }
 
 @media (max-width: 768px) {
 
+  .forpublishers-section {
+    .background-text {
+      display: none;
+    }
+  }
+
+  .header-section .you-victorious-row{
+    padding-bottom: 3rem;
+  }
+  .header-section ul.navbar-nav.nav-block{
+    background-color: #fff;
+    padding: 0px 5px;
+  }
 }
 
 @media (max-width: 576px) {

@@ -1,6 +1,7 @@
 body{
   font-size: 18px;
   color:$grey_text_color;
+  font-family: "Open Sans", Arial, sans-serif;
 }
 .header-section{
   background-color: $bg_blue_color;
@@ -38,7 +39,8 @@ body{
         text-align: center;
         text-transform: uppercase;
         color: $main_title_color;
-       // font-family: TTNorms-Bold;
+        font-weight: 900;
+        //font-family: 'TTNorms-Black';
       }
 
       .you-victorious-block__signup{
@@ -87,6 +89,26 @@ body{
   .forpublishers-row-one{
     margin-bottom: 10.56rem;
   }
+
+  .container{
+    position: relative;
+  }
+
+  .background-text{
+    position: absolute;
+    left: -260px;
+    top: 94px;
+    line-height:250px;
+    z-index: -1;
+    overflow: hidden;
+    font-size: 230px;
+    font-weight: 900;
+    color: rgba(51, 51, 51, 0.05);
+     span{
+      font-size: 390px;
+    }
+  }
+
 }
 
 .foradvertisers-section{

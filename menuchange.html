@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        @font-face {
+            font-family: 'TTNorms-Black';
+            src: url('/dist/fonts/tt_norms/TTNorms-Black.otf') format('otf')
+
+        }
+
+        body {
+            margin: 0;
+            padding-top: 30px
+        }
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 30px;
+            background-color: #000;
+        }
+        section {
+            height: 500px;
+            background-color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<header id="change">
+    <div class="container">
+    <nav>
+    <a href="#home" style="font-family:'TTNorms-Black' ">Welcome</a>
+    <a href="#featuredWork">Work</a>
+    <a href="#caseStudy">Case Study</a>
+</nav>
+</div>
+</header>
+
+<section id="home">Content</section>
+    <section id="featuredWork">Content</section>
+    <section id="caseStudy">Content</section>
+</body>
+<script>
+    var top1 = $('#home').offset().top;
+    var top2 = $('#featuredWork').offset().top;
+    var top3 = $('#caseStudy').offset().top;
+
+    $(document).scroll(function() {
+        var scrollPos = $(document).scrollTop();
+        if (scrollPos >= top1 && scrollPos < top2) {
+            $('#change').css('background-color', '#f00');
+        } else if (scrollPos >= top2 && scrollPos < top3) {
+            $('#change').css('background-color', '#0f0');
+        } else if (scrollPos >= top3) {
+            $('#change').css('background-color', '#00f');
+        }
+    });
+</script>
+</html>
