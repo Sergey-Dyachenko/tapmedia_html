@@ -13,6 +13,11 @@ body{
     text-transform: uppercase;
     color: $grey_text_color;
   }
+  img.you-victorious-block__img{
+    max-width: 186px;
+    height: auto;
+    fill: #333333;
+  }
   ul.navbar-nav.nav-block{
     width: 100%;
     display: flex;
@@ -146,6 +151,9 @@ body{
     margin: 0 auto 1rem auto;
     font-size: 5rem;
     color:$main_title_color;
+  }
+  .popup-form-section__img{
+    margin-top:1rem;
   }
    #modal_close{
      width: 21px;

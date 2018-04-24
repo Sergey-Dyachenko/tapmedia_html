@@ -16,6 +16,10 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     color: #333333; }
+  .header-section img.you-victorious-block__img {
+    max-width: 186px;
+    height: auto;
+    fill: #333333; }
   .header-section ul.navbar-nav.nav-block {
     width: 100%;
     display: flex;
@@ -116,6 +120,8 @@ body {
     margin: 0 auto 1rem auto;
     font-size: 5rem;
     color: #cc0000; }
+  .popup-form-section .popup-form-section__img {
+    margin-top: 1rem; }
   .popup-form-section #modal_close {
     width: 21px;
     height: 21px;
@@ -154,7 +160,57 @@ body {
   .container {
     width: 1100px; } }
 
-@media (max-width: 300px) {
+@media (max-width: 992px) {
   .header-section .you-victorious-row
 .you-victorious-block .you-victorious-block__title {
-    font-size: 3rem; } }
+    font-size: 4rem; } }
+
+@media (max-width: 576px) {
+  .header-section .you-victorious-row
+.you-victorious-block .you-victorious-block__title {
+    font-size: 3rem; }
+  .popup-form-section {
+    width: 400px;
+    height: 350px;
+    margin-left: -200px;
+    margin-top: -175px; }
+  .popup-form-section .popup-form-section__img, .popup-form-section .popup-form-section__title {
+    font-size: 2rem; }
+  img.popup-form-section__img {
+    max-width: 146px;
+    height: auto;
+    display: block;
+    margin-top: 1rem; } }
+
+@media (max-width: 400px) {
+  .header-section .you-victorious-row
+.you-victorious-block .you-victorious-block__title {
+    font-size: 3rem; }
+  .popup-form-section {
+    width: 350px;
+    height: 300px;
+    margin-left: -175px;
+    margin-top: -150px; }
+  .popup-form-section .popup-form-section__img, .popup-form-section .popup-form-section__title {
+    font-size: 2rem; }
+  img.popup-form-section__img {
+    max-width: 146px;
+    height: auto;
+    display: block;
+    margin-top: 1rem; } }
+
+@media (max-width: 300px) {
+  .popup-form-section {
+    width: 280px;
+    height: 280px;
+    margin-left: -140px;
+    margin-top: -140px; }
+  .popup-form-section .popup-form-section__img, .popup-form-section .popup-form-section__title {
+    font-size: 2rem; }
+  img.popup-form-section__img {
+    max-width: 120px;
+    height: auto;
+    display: block;
+    margin-top: 2rem; }
+  .popup-form-section .popup-form__name, .popup-form-section .popup-form__email, .popup-form-section .popup-form__submit {
+    width: 89%; } }
